@@ -15,6 +15,7 @@ a:focus {
 
 .codrops-header {
 	background: none;
+	
 }
 
 .codrops-header__tagline,
@@ -89,11 +90,7 @@ a:focus {
 
 .js .content__block {
 	width: 100%;
-	padding: 0 5vw 0 20vw;
-}
-
-.js .content__description {
-	padding: 0 0 0 4vw;
+	padding: 0 5vw 0 5vw;
 }
 
 .content__number {
@@ -107,8 +104,53 @@ a:focus {
 }
 
 .content__title {
-	font-size: 6vw;
+	font-size: 2vw;
+	width: 100%;
+	text-align: center;
 }
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+	.content__title {
+		font-size: 1vw;
+		width: 100%;
+		text-align: center;
+		line-height: 120%;
+	}
+	
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+	.content__title {
+		font-size: 4vw;
+		width: 100%;
+		text-align: center;
+		line-height: 120%;
+	}
+	
+  }
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+	.content__subtitle {
+		font-size: 0.5vw;
+		width: 100%;
+		text-align: center;
+	}
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+	.content__subtitle {
+		font-size: 3vw;
+		width: 100%;
+		text-align: center;
+	}
+  }
+
 
 .title {
 	color: #fceeb8;
